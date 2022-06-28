@@ -1,0 +1,577 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>HOT6_YOLOvP</title>
+
+  <!-- Favicons -->
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="/static/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/static/css/style-responsive.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="{% url 'Dashboard' %}" class="logo"><b>YOLO_vP</b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+          <!-- settings start -->
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-tasks"></i>
+              <span class="badge bg-theme">4</span>
+              </a>
+            <ul class="dropdown-menu extended tasks-bar">
+              <div class="notify-arrow notify-arrow-green"></div>
+              <li>
+                <p class="green">You have 4 pending tasks</p>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <div class="task-info">
+                    <div class="desc">HOT6 Admin Panel</div>
+                    <div class="percent">77%</div>
+                  </div>
+                  <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                      <span class="sr-only">77% Complete (success)</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <div class="task-info">
+                    <div class="desc">Database Update</div>
+                    <div class="percent">60%</div>
+                  </div>
+                  <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                      <span class="sr-only">60% Complete (warning)</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <div class="task-info">
+                    <div class="desc">Product Development</div>
+                    <div class="percent">100%</div>
+                  </div>
+                  <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                      <span class="sr-only">100% Complete</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <div class="task-info">
+                    <div class="desc">Payments Sent</div>
+                    <div class="percent">100%</div>
+                  </div>
+                  <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                      <span class="sr-only">100% Complete (Important)</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="external">
+                <a href="#">See All Tasks</a>
+              </li>
+            </ul>
+          </li>
+          <!-- settings end -->
+          <!-- inbox dropdown start-->
+          <li id="header_inbox_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-envelope-o"></i>
+              <span class="badge bg-theme">6</span>
+              </a>
+            <ul class="dropdown-menu extended inbox">
+              <div class="notify-arrow notify-arrow-green"></div>
+              <li>
+                <p class="green">You have 6 new messages</p>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/geunha.png"></span>
+                  <span class="subject">
+                  <span class="from">GEUNHA SEO</span>
+                  <span class="time">Just now</span>
+                  </span>
+                  <span class="message">
+                  PERFECT!!!
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/sungkyung.png"></span>
+                  <span class="subject">
+                  <span class="from">SUNGKYUNG CHOI</span>
+                  <span class="time">5 mins.</span>
+                  </span>
+                  <span class="message">
+                  GEUNHA, how's everything?
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/jinyoung.png"></span>
+                  <span class="subject">
+                  <span class="from">JINYOUNG LEE</span>
+                  <span class="time">45 mins.</span>
+                  </span>
+                  <span class="message">
+                  Sure! What's it?
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/dongmin.png"></span>
+                  <span class="subject">
+                  <span class="from">DONGMIN KIM</span>
+                  <span class="time">1 hr.</span>
+                  </span>
+                  <span class="message">
+                  Hey, JINYOUNG! 
+                  <span class="message">
+                  I need your help with this.
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/Injay.png"></span>
+                  <span class="subject">
+                  <span class="from">INJAY LHO</span>
+                  <span class="time">4 hrs.</span>
+                  </span>
+                  <span class="message">
+                  YEP! GYUDONG, 
+                  <span class="message"></span>
+                  Let's meet at the lobby right now!
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/gyudong.png"></span>
+                  <span class="subject">
+                  <span class="from">GYUDONG LEE</span>
+                  <span class="time">4 hrs.</span>
+                  </span>
+                  <span class="message">
+                  Please, answer asap!
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">See all messages</a>
+              </li>
+            </ul>
+          </li>
+          <!-- inbox dropdown end -->
+          <!-- notification dropdown start-->
+          <li id="header_notification_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge bg-warning">7</span>
+              </a>
+            <ul class="dropdown-menu extended notification">
+              <div class="notify-arrow notify-arrow-yellow"></div>
+              <li>
+                <p class="yellow">You have 7 new notifications</p>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                  Server Overloaded.
+                  <span class="small italic">4 mins.</span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="label label-warning"><i class="fa fa-bell"></i></span>
+                  Memory #2 Not Responding.
+                  <span class="small italic">30 mins.</span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                  Disk Space Reached 85%.
+                  <span class="small italic">2 hrs.</span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="label label-success"><i class="fa fa-plus"></i></span>
+                  New User Registered.
+                  <span class="small italic">3 hrs.</span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">See all notifications</a>
+              </li>
+            </ul>
+          </li>
+          <!-- notification dropdown end -->
+        </ul>
+        <!--  notification end -->
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="{% url 'Login' %}">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="{% url 'Profile' %}"><img src="/static/img/hot6 logo2.png" class="img-circle" width="80"></a></p>
+          <h5 class="centered"> Team HOT6</h5>
+          <li class="mt">
+            <a href="{% url 'Dashboard' %}">
+              <i class="fa fa-dashboard"></i>
+              <span> Dashboard</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a class="active" href="javascript:;">
+              <i class="fa fa-lightbulb-o"></i>
+              <span> Project Overview</span>
+              </a>
+            <ul class="sub">
+              <li class="active"><a href="{% url 'ProjectOverview' %}"> Project Overview</a></li>
+              <li><a href="{% url 'Sprintplanning' %}"> Sprint planning</a></li>
+              <li><a href="{% url 'Calendar' %}"> Calendar</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span> Livestreaming</span>
+              </a>
+            <ul class="sub">
+              <li><a href="{% url 'Seoul' %}"> Seoul, South Korea</a></li>
+              <li><a href="{% url 'KohSamui' %}"> Koh Samui, Thailand</a></li>
+              <li><a href="{% url 'Davao' %}"> Davao, Philippines</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span> Video</span>
+              </a>
+            <ul class="sub">
+              <li><a href="{% url 'FallingDown' %}"> Falling Down</a></li>
+              <li><a href="{% url 'Fire' %}"> Fire</a></li>
+            </ul>
+          </li>
+        </li>
+        <li class="sub-menu">
+          <a href="javascript:;">
+            <i class="fa fa-desktop"></i>
+            <span> Webcam</span>
+            </a>
+          <ul class="sub">
+            <li><a href="{% url 'Webcam' %}"> Camera1</a></li>
+            <li><a href="{% url 'Webcam2' %}"> Camera2</a></li>
+          </ul>
+        </li>
+      </li>
+        <li class="sub-menu">
+          <a href="javascript:;">
+            <i class="fa fa-cogs"></i>
+            <span> System</span>
+            </a>
+          <ul class="sub">
+            <li><a href="{% url 'SystemArchitecture' %}"> System Architecture</a></li>
+          </ul>
+        </li>
+          <li>
+            <a href="{% url 'GoogleMaps' %}">
+              <i class="fa fa-map-marker"></i>
+              <span> Google Maps</span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        <h3><i class="fa fa-angle-right"></i> Project Overview</h3>
+        <div class="row content-panel mt mb">
+          <div class="col-md-6">
+            <h2 contenteditable="true">Real Time AI CCTV Solution</h2>
+            <h4 contenteditable="true">실시간 지능형 CCTV 솔루션</h4>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <br>
+            <img src="/static/img/intro1.png" width="600" height="220">
+            <br>
+            <br>
+            <p contenteditable="true">지난 2021년 전국 공공 기관 CCTV 설치대수는 146만 여 대이며 이는 2018년에 비해 41% 증가한 수치입니다.</p>
+            <p contenteditable="true">반면, 공개 자료에 따르면 전국 CCTV 통합관제센터 직원 1인 당 평균 관제 CCTV가 98대이므로 CCTV 설치대수에 비해 관리 인원이 현저히 적습니다.</p> 
+            <p contenteditable="true">이는 행정안전부 산정 <영상정보처리기기 통합관제센터 구축 및 운영 규정>의 1인 당 50대를 대략 2배로 초과합니다.</p>
+            <br>
+            <br>
+            <img src="/static/img/intro2.png" width="430" height="180">
+            <br>
+            <br>
+            <p contenteditable="true">행정안전부 규정대로 관제 인력을 증원 시 전국에 최소한 6,715,016명을 추가로 고용해야 하며,</p>
+            <p contenteditable="true">추가로 지급되는 인건비를 2022년 최저임금 기준으로 산정했을 때</p>
+            <p contenteditable="true">최소한 매월 대략 13조, 매년 대략 154조가 공공 CCTV 관제 추가 비용으로 발생하게 됩니다.</p> 
+            <br>
+            <br>
+            <p contenteditable="true">여기서 두 가지 의문이 발생합니다.</p>
+            <p contenteditable="true">Q1. 추가 인력 투입으로 관제 인원 1인 당 CCTV 수가 줄어든다면 </p>
+            <p contenteditable="true">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp증가한 인건비 부담에 비례하게 관제 효과가 높아질 것인가? </p>
+            <p contenteditable="true">Q2. 많은 관리비를 장기간 지불할 만큼 </p> 
+            <p contenteditable="true">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp기존 CCTV의 성능이 충분히 우수한가?</p> 
+            <br>
+            <br>
+            <p contenteditable="true">저희는 해결책을 CCTV 자체 성능 개선에서 찾기로 했습니다.</p>
+            <img src="/static/img/intro4.png" width="600" height="130">
+            <br>
+            <br>
+            <p contenteditable="true">기존 CCTV에 AI를 탑재하여 다음의 사항이 개선됩니다.</p>
+            <p contenteditable="true">1. 외부 요인에 따라 감시 능력이 변하지 않는다.</p>
+            <p contenteditable="true">2. 투입하는 자원에 따라 바뀌던 CCTV 감시 성능을 균일화 할 수 있다.</p>
+            <p contenteditable="true">3. 돌발 상황의 발생 위험도가 낮은 곳은 관제 인력 상주 없이도 관리 가능하다.</p>
+            <p contenteditable="true">4. 효율적인 인력 배치와 운용이 가능하다.</p>
+            <br>
+            <br>
+          </div>
+        </div>
+
+        <div class="mt"></div>
+        <div class="row content-panel mt mb">
+          <div class="col-md-6">
+            <h3 contenteditable="true">AI</h3>
+            <h4 contenteditable="true">인공지능</h4>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <img src="/static/img/ai_cctv2.png" width="600" height="200">
+            <br>
+            <p contenteditable="true" class="mt">인공지능은 학습과 패턴인식을 통해 인식한 객체의 정상적인 행동과 비정상적인 행동을 구별합니다. </p>
+            <p contenteditable="true">이상행동이 탐지되면 영상 재생 화면에 경고 문구가 출력되고, 동시에 경고 메시지가 관리자에게 전송됩니다.</p>
+            <br>
+          </div>
+        </div>
+        <div class="mt"></div>
+        <div class="row content-panel mt mb">
+          <div class="col-md-6">
+            <h3 contenteditable="true">Deep Learning_Anomaly Detection</h3>
+            <h4 contenteditable="true">딥러닝_이상행동 탐지</h4>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <img src="/static/img/search.png" width="600" height="400">
+            <br>
+            <br>
+            <p contenteditable="true">YOLOvP는 딥러닝 인공지능 엔진과 사전훈련된 모델을 기반으로 이미지를 처리하여 영상을 분석합니다. </p>
+            <p contenteditable="true">실시간으로 영상 속의 사람과 그 외 사물 등의 객체를 인식하여 침입, 배회, 쓰러짐, 화재 등을 탐지합니다.</p>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="mt"></div>
+        <div class="row content-panel mt mb">
+          <div class="col-md-6">
+            <h3 contenteditable="true">How YOLOvP works</h3>
+            <h4 contenteditable="true">YOLOvP 작동 원리</h4>
+          </div>
+          <div class="col-md-6">
+            <img src="/static/img/y1.png" width="600" height="300">
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="/static/img/y2.png" width="600" height="300">
+            <br>
+            <br>
+            <br>
+            <br>    
+            <img src="/static/img/y3.png" width="600" height="300">      
+            <br> 
+            <br> 
+          </div>
+        </div>
+        <div class="mt"></div>
+        <div class="row content-panel mt mb">
+          <div class="col-md-6">
+            <h3 contenteditable="true">Testing Results(by KISA Dataset)</h3>
+            <h4 contenteditable="true">성능 테스트 결과(한국인터넷진흥원 데이터셋)</h4>
+          </div>
+          <div class="col-md-6">
+            <p contenteditable="true" class="mt">KISA(한국인터넷진흥원) 인증            
+            <p contenteditable="true">객체 및 행위를 자동으로 추적·식별할 수 있는 지능형 CCTV 솔루션에 부여됩니다. 인증을 통과하려면 KISA가 제시한 항목 중 특정 행위를 90% 이상 검출해야 하고 수백 회의 테스트를 거쳐야 합니다. </p>
+            <p contenteditable="true">저희 HOT6의 YOLOvP는 KISA 인증 기준으로 배회, 침입, 쓰러짐, 화재 탐지 등 4가지 영역에서 최종적으로 평균 90% 이상의 검출율을 달성하였습니다.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="/static/img/portfolio/kisa.png" width="600" height="300">
+            <br>
+            <p contenteditable="true">KISA 성능 테스트 기준</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="/static/img/portfolio/kisa_test2.png" width="600" height="480">
+            <br>
+            <p contenteditable="true">성능 테스트 2차 결과</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="/static/img/portfolio/kisa_test1.png" width="600" height="480">
+            <br>
+            <p contenteditable="true">성능 테스트 1차 결과</p>
+            <br>
+          </div>
+        </div>
+        <div class="mt"></div>
+        <div class="row content-panel mt mb">
+          <div class="col-md-6">
+            <h3 contenteditable="true">Server Requirements</h3>
+            <h4 contenteditable="true">서버 권장사양</h4>
+          </div>
+          <div class="col-md-6">
+            <p contenteditable="true">YOLOvP는 다음의 사양을 충족하는 환경에서 가장 효율적으로 작동하였으며 이를 서버의 사양으로 권장합니다.</p>
+            <img src="/static/img/portfolio/server.png" width="600" height="200">
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="mt"></div>
+        <div class="row content-panel mt mb">
+          <div class="col-md-6">
+            <h3 contenteditable="true">Video Management System</h3>
+            <h4 contenteditable="true">비디오 관리 시스템</h4>
+          </div>
+          <div class="col-md-6">
+            <p contenteditable="true" class="mt">YOLOvP는 실시간, 저장된 파일, IP 카메라 등 다양한 원천의 영상을 처리합니다. </p>
+            <p contenteditable="true">분석 결과는 웹사이트 접속을 통해 손쉽게 확인할 수 있습니다.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="/static/img/notebook1.png" width="600" height="350">
+            <p contenteditable="true">웹사이트 메인 화면</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="/static/img/notebook2.png" width="600" height="350">
+            <p contenteditable="true">웹사이트 영상 송출 화면</p>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="mt"></div>
+        <div class="row content-panel mt mb">
+          <div class="col-md-6">
+            <h3 contenteditable="true">AI-Based CCTV Use Cases</h3>
+            <h4 contenteditable="true">지능형 CCTV 용도</h4>
+          </div>
+          <div class="col-md-6">
+            <br>
+              <img src="/static/img/usecase.png" width="600" height="300">
+            <br>
+            <br>
+          </div>
+        </div>
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>HOT6</strong>. All Rights Reserved
+        </p>
+        <div class="credits">
+          <!--
+            You are NOT allowed to delete the credit link to TemplateMag with free version.
+            You can delete the credit link only if you bought the pro version.
+            Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
+            Licensing information: https://templatemag.com/license/
+          -->
+          Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
+        </div>
+        <a href="inline_editor.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+          </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="/static/lib/jquery/jquery.min.js"></script>
+  <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="/static/lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="/static/lib/jquery.scrollTo.min.js"></script>
+  <script src="/static/lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="/static/lib/common-scripts.js"></script>
+  <!--script for this page-->
+  <script src="/static/lib/ckeditor/ckeditor.js"></script>
+
+</body>
+
+</html>

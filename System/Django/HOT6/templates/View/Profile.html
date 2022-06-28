@@ -1,0 +1,542 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>HOT6_YOLOvP</title>
+
+  <!-- Favicons -->
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="/static/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/static/css/style-responsive.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="{% url 'Dashboard' %}" class="logo"><b>YOLO_vP</b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+          <!-- settings start -->
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-tasks"></i>
+              <span class="badge bg-theme">4</span>
+              </a>
+            <ul class="dropdown-menu extended tasks-bar">
+              <div class="notify-arrow notify-arrow-green"></div>
+              <li>
+                <p class="green">You have 4 pending tasks</p>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <div class="task-info">
+                    <div class="desc">HOT6 Admin Panel</div>
+                    <div class="percent">77%</div>
+                  </div>
+                  <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                      <span class="sr-only">77% Complete (success)</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <div class="task-info">
+                    <div class="desc">Database Update</div>
+                    <div class="percent">60%</div>
+                  </div>
+                  <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                      <span class="sr-only">60% Complete (warning)</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <div class="task-info">
+                    <div class="desc">Product Development</div>
+                    <div class="percent">100%</div>
+                  </div>
+                  <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                      <span class="sr-only">100% Complete</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <div class="task-info">
+                    <div class="desc">Payments Sent</div>
+                    <div class="percent">100%</div>
+                  </div>
+                  <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                      <span class="sr-only">100% Complete (Important)</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="external">
+                <a href="#">See All Tasks</a>
+              </li>
+            </ul>
+          </li>
+          <!-- settings end -->
+          <!-- inbox dropdown start-->
+          <li id="header_inbox_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-envelope-o"></i>
+              <span class="badge bg-theme">6</span>
+              </a>
+            <ul class="dropdown-menu extended inbox">
+              <div class="notify-arrow notify-arrow-green"></div>
+              <li>
+                <p class="green">You have 6 new messages</p>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/geunha.png"></span>
+                  <span class="subject">
+                  <span class="from">GEUNHA SEO</span>
+                  <span class="time">Just now</span>
+                  </span>
+                  <span class="message">
+                  PERFECT!!!
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/sungkyung.png"></span>
+                  <span class="subject">
+                  <span class="from">SUNGKYUNG CHOI</span>
+                  <span class="time">5 mins.</span>
+                  </span>
+                  <span class="message">
+                  GEUNHA, how's everything?
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/jinyoung.png"></span>
+                  <span class="subject">
+                  <span class="from">JINYOUNG LEE</span>
+                  <span class="time">45 mins.</span>
+                  </span>
+                  <span class="message">
+                  Sure! What's it?
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/dongmin.png"></span>
+                  <span class="subject">
+                  <span class="from">DONGMIN KIM</span>
+                  <span class="time">1 hr.</span>
+                  </span>
+                  <span class="message">
+                  Hey, JINYOUNG! 
+                  <span class="message">
+                  I need your help with this.
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/Injay.png"></span>
+                  <span class="subject">
+                  <span class="from">INJAY LHO</span>
+                  <span class="time">4 hrs.</span>
+                  </span>
+                  <span class="message">
+                  YEP! GYUDONG, 
+                  <span class="message"></span>
+                  Let's meet at the lobby right now!
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="photo"><img alt="avatar" src="/static/img/gyudong.png"></span>
+                  <span class="subject">
+                  <span class="from">GYUDONG LEE</span>
+                  <span class="time">4 hrs.</span>
+                  </span>
+                  <span class="message">
+                  Please, answer asap!
+                  </span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">See all messages</a>
+              </li>
+            </ul>
+          </li>
+          <!-- inbox dropdown end -->
+          <!-- notification dropdown start-->
+          <li id="header_notification_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge bg-warning">7</span>
+              </a>
+            <ul class="dropdown-menu extended notification">
+              <div class="notify-arrow notify-arrow-yellow"></div>
+              <li>
+                <p class="yellow">You have 7 new notifications</p>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                  Server Overloaded.
+                  <span class="small italic">4 mins.</span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="label label-warning"><i class="fa fa-bell"></i></span>
+                  Memory #2 Not Responding.
+                  <span class="small italic">30 mins.</span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                  Disk Space Reached 85%.
+                  <span class="small italic">2 hrs.</span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">
+                  <span class="label label-success"><i class="fa fa-plus"></i></span>
+                  New User Registered.
+                  <span class="small italic">3 hrs.</span>
+                  </a>
+              </li>
+              <li>
+                <a href="index.html#">See all notifications</a>
+              </li>
+            </ul>
+          </li>
+          <!-- notification dropdown end -->
+        </ul>
+        <!--  notification end -->
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="{% url 'Login' %}">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="{% url 'Profile' %}"><img src="/static/img/hot6 logo2.png" class="img-circle" width="80"></a></p>
+          <h5 class="centered"> Team HOT6</h5>
+          
+          <li class="mt">
+            <a href="{% url 'Dashboard' %}">
+              <i class="fa fa-dashboard"></i>
+              <span> Dashboard</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-lightbulb-o"></i>
+              <span> Project Overview</span>
+              </a>
+            <ul class="sub">
+              <li><a href="{% url 'ProjectOverview' %}"> Project Overview</a></li>
+              <li><a href="{% url 'Sprintplanning' %}"> Sprint planning</a></li>
+              <li><a href="{% url 'Calendar' %}"> Calendar</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span> Livestreaming</span>
+              </a>
+            <ul class="sub">
+              <li><a href="{% url 'Seoul' %}"> Seoul, South Korea</a></li>
+              <li><a href="{% url 'KohSamui' %}"> Koh Samui, Thailand</a></li>
+              <li><a href="{% url 'Davao' %}"> Davao, Philippines</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span> Video</span>
+              </a>
+            <ul class="sub">
+              <li><a href="{% url 'FallingDown' %}"> Falling Down</a></li>
+              <li><a href="{% url 'Fire' %}"> Fire</a></li>
+            </ul>
+          </li>
+        </li>
+        <li class="sub-menu">
+          <a href="javascript:;">
+            <i class="fa fa-desktop"></i>
+            <span> Webcam</span>
+            </a>
+          <ul class="sub">
+            <li><a href="{% url 'Webcam' %}"> Camera1</a></li>
+            <li><a href="{% url 'Webcam2' %}"> Camera2</a></li>
+          </ul>
+        </li>
+      </li>
+        <li class="sub-menu">
+          <a href="javascript:;">
+            <i class="fa fa-cogs"></i>
+            <span> System</span>
+            </a>
+          <ul class="sub">
+            <li><a href="{% url 'SystemArchitecture' %}"> System Architecture</a></li>
+          </ul>
+        </li>
+          <li>
+            <a href="{% url 'GoogleMaps' %}">
+              <i class="fa fa-map-marker"></i>
+              <span> Google Maps</span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="row content-panel">
+              <div class="col-md-4 profile-text mt mb centered">
+                <div class="right-divider hidden-sm hidden-xs">
+                  <h4>2022.04.04.</h4>
+                  <h6>Project start date</h6>
+                  <h4>2022.06.15.</h4>
+                  <h6>Project start date</h6>
+                  <h4>73 days</h4>
+                  <h6>Duration (total time)</h6>
+                </div>
+              </div>
+              <!-- /col-md-4 -->
+              <div class="col-md-4 profile-text">
+                <h3>Team HOT6</h3>
+                <h6>한양대학교 SW융합교육센터 산학협력 프로젝트 2조</h6>
+                <p>안녕하세요!</p>
+                <p>저희는 프로젝트 팀 HOT6입니다.</p>
+                <p>총 6인의 팀 멤버들이 프로젝트를 진행하였습니다.</p> 
+                <p>팀 리더 : 서근하</p> 
+                <p>팀 멤버 : 최성경, 김동민, 노인재, 이규동, 이진영</p> 
+                <br>
+                <p>본 프로젝트는 2022년 4월 4일부터 6월 15일까지 진행되었습니다.</p>
+                <p>주제는 <실시간 지능형 CCTV 솔루션>입니다.</p>
+                <br>
+
+              </div>
+              <!-- /col-md-4 -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /col-lg-12 -->
+          <div class="col-lg-12 mt">
+            <div class="row content-panel">
+              <div class="panel-heading">
+                <ul class="nav nav-tabs nav-justified">
+                  <li class="active">               
+                    <a data-toggle="tab" href="#contact">Contact</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#photo">Photo</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /panel-heading -->
+              <div class="panel-body">
+                <div class="tab-content">
+					
+                  <!-- /tab-pane -->
+                  <div id="contact" class="tab-pane active">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mapouter">
+							<div class="gmap_canvas">
+								<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%ED%95%9C%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+								</iframe><a href="https://123movies-to.org"></a><br>
+								<style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>
+								<a href="https://www.embedgooglemap.net">embed google maps in gmail</a>
+								<style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+							</div>
+						</div>
+                      </div>
+                      <!-- /col-md-6 -->
+                      <div class="col-md-6 detailed">
+                        <h4>HYU CENTER (SW EDUCATION)</h4>
+                        <div class="col-md-8 col-md-offset-2 mt">
+                          <p>
+                            Postal Address<br/> PO BOX 04763, 222, Wangsimni-ro<br/> Seongdong-gu, Seoul, Republic of Korea
+                          </p>
+                          <p> Phone : +82 02 2220 0114<br/>
+                          </p>
+                          <p>
+                            Email: ­hyuscec@hanyang.ac.kr<br/> Website: https://site.hanyang.ac.kr/web/scec
+                          </p>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h4>Contacts_HOT6</h4>
+                        <div class="col-md-8 col-md-offset-2 mt">
+                          <p>
+                            GEUNHA SEO : camel3118@gmail.com<br/>
+                          </p>
+                          <p>
+                            SUNGKYUNG CHOI : chloechoi.073@gmail.com<br/>
+                          </p>
+                          <p>
+                            DONGMIN KIM : kdm3657@gmail.com<br/>
+                          </p>
+                          <p>
+                            INJAY LHO : Lhoinjay@gmail.com<br/>
+                          </p>
+                          <p>
+                            GYUDONG LEE : jace29@naver.com<br/>
+                          </p>
+                          <p>
+                            JINYOUNG LEE : 2017191141@kcu.ac.kr<br/>
+                          </p>
+                        </div>
+                      </div>
+                      <!-- /col-md-6 -->
+                    </div>
+                    <!-- /row -->
+                  </div>
+                  <!-- /tab-pane -->
+                  <div id="photo" class="tab-pane">
+					<center>
+					<img src="/static/img/space1.png" width="600" height="400">
+					<img src="/static/img/space2.png" width="600" height="400">
+					</center>
+					<!-- /row -->
+                  </div>
+                  <!-- /tab-pane -->
+                </div>
+                <!-- /tab-content -->
+              </div>
+              <!-- /panel-body -->
+            </div>
+            <!-- /col-lg-12 -->
+          </div>
+          <!-- /row -->
+        </div>
+        <!-- /container -->
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>HOT6</strong>. All Rights Reserved
+        </p>
+        <div class="credits">
+          <!--
+            You are NOT allowed to delete the credit link to TemplateMag with free version.
+            You can delete the credit link only if you bought the pro version.
+            Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
+            Licensing information: https://templatemag.com/license/
+          -->
+          Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
+        </div>
+        <a href="profile.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+          </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="/static/lib/jquery/jquery.min.js"></script>
+  <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="/static/lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="/static/lib/jquery.scrollTo.min.js"></script>
+  <script src="/static/lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="/static/lib/common-scripts.js"></script>
+  <!--script for this page-->
+  <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+  <script>
+    $('.contact-map').click(function() {
+
+      //google map in tab click initialize
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(40.6700, -73.9400);
+        var mapOptions = {
+          zoom: 11,
+          scrollwheel: false,
+          center: myLatlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Dashio Admin Theme!'
+        });
+      }
+      google.maps.event.addDomListener(window, 'click', initialize);
+    });
+  </script>
+</body>
+
+</html>

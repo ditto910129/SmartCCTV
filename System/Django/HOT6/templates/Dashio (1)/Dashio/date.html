@@ -1,0 +1,13 @@
+<script>
+      $(function () {
+        $("#datetimepicker1").datetimepicker();
+      });
+    </script>
+  <div  class="form-group m-3" >
+       <h4> Hello {{ user.username }}, you are at the Reception Unserviceable Page</h4>
+       <p>Select a date and Time</p>
+    <div class="input-group date" style="width:300px" id="datetimepicker1" data-target-input="nearest">
+      <input required name="datetime" type="text"  class="form-control datetimepicker-input" data-target="#datetimepicker1"  />
+      <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+      </div>

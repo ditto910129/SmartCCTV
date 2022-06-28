@@ -1,0 +1,8 @@
+[2022-05-27 16:02:47,310] INFO [ProducerStateManager partition=temp2-0] Writing producer snapshot at offset 2622 (kafka.log.ProducerStateManager)
+[2022-05-27 16:02:47,313] INFO [Log partition=temp2-0, dir=/home/seo3/kafka/data] Rolled new log segment at offset 2622 in 4 ms. (kafka.log.Log)
+[2022-05-27 16:36:21,554] INFO [ProducerStateManager partition=temp1-0] Writing producer snapshot at offset 5125 (kafka.log.ProducerStateManager)
+[2022-05-27 16:36:21,556] INFO [Log partition=temp1-0, dir=/home/seo3/kafka/data] Rolled new log segment at offset 5125 in 2 ms. (kafka.log.Log)
+[2022-05-27 16:46:35,264] INFO [ProducerStateManager partition=temp1-0] Writing producer snapshot at offset 7562 (kafka.log.ProducerStateManager)
+[2022-05-27 16:46:35,269] INFO [Log partition=temp1-0, dir=/home/seo3/kafka/data] Rolled new log segment at offset 7562 in 5 ms. (kafka.log.Log)
+[2022-05-27 16:54:10,758] INFO [ProducerStateManager partition=temp1-0] Writing producer snapshot at offset 9994 (kafka.log.ProducerStateManager)
+[2022-05-27 16:54:10,803] INFO [Log partition=temp1-0, dir=/home/seo3/kafka/data] Rolled new log segment at offset 9994 in 45 ms. (kafka.log.Log)

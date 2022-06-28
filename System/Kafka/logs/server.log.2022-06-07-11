@@ -1,0 +1,2 @@
+[2022-06-07 11:27:53,812] INFO [ProducerStateManager partition=davao-0] Writing producer snapshot at offset 8878 (kafka.log.ProducerStateManager)
+[2022-06-07 11:27:53,815] INFO [Log partition=davao-0, dir=/home/seo3/kafka/data1] Rolled new log segment at offset 8878 in 5 ms. (kafka.log.Log)

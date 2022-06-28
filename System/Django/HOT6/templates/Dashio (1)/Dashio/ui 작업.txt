@@ -1,0 +1,134 @@
+
+
+[수정 기준 html 파일]
+홈페이지 첫 화면 index.html
+
+
+
+[수정 대상인 html 파일]
+1. 로그인
+  (인덱스 l.263)  login.html
+
+2. 팀 프로필 
+  (인덱스 l.276)  profile.html
+
+3. 메뉴 Project Overview
+  - Project Overview
+    (인덱스 l.290)  inline_editor.html
+  - Agile planning
+    (인덱스 l.290)  grids.html
+  - Calendar
+    (인덱스 l.290)  calendar.html
+
+4. 메뉴 Livestreaming
+  - Seoul, South Korea
+    (인덱스 l.301)  panels1.html
+  - Koh Samui, Thailand
+    (인덱스 l.302)  panels2.html
+  - Las Vegas, USA
+    (인덱스 l.303)  panels3.html
+
+5. 메뉴 Viedo
+  - Falling Down
+    (인덱스 l.312)  panels4.html
+  - Fire
+    (인덱스 l.313)  panels5.html
+
+6. 메뉴 Webcam
+  - Camera
+    (인덱스 l.323)  panels6.html
+
+7. 메뉴 System
+  - System Architecture
+    (인덱스 l.333)  gallery.html
+
+7. 메뉴 Google Maps
+  (인덱스 l.333)  google_maps.html
+
+
+
+[수정하지 않는 코드 부분]
+- type="text/javascript" 등 형식 관련 내용
+- "http://" 등 url
+- href="login.html" (실행하는 배경이 되는 폴더 자체를 가져와서 그 안에서 코드 실행중임)
+
+
+
+[수정할 코드 부분]
+# 경로 수정시 참고 부분 (저장된 파일 실행 경로) : 
+  href = 
+  src = 
+
+1. <head 부분> 
+- 경로 추가 : static/
+- 로고부분 : 제품명 변경 예정    #제품명 협의 필요
+  (인덱스 l.10)  <title>HOT6_YOLOvP</title>
+
+2. <body - header 부분 - TOP BAR CONTENT & NOTIFICATIONS  부분> 
+- 경로 추가 : static/ 
+- 로고 이름 : DASHIO -> HOT 6 (투컬러)   #추후 제품명으로 변경할 예정임
+  (인덱스 l.46)  <a href="index.html" class="logo"><b>HOT<span>6</span></b></a>
+- 복붙
+  (인덱스 l.59~260)  
+- 로그인 부분 추가 예정 (규동)
+  (인덱스 l.261~265)
+
+3. <body - sidebar - MAIN SIDEBAR MENU  부분> 
+- 복붙
+  (인덱스 l.271~346)
+
+4. <body  - MAIN CONTENT  부분>
+- 해당 html에 관련된 페이지 내용임. 각각에 맞게 수정하면 됨
+- 상의 후 작업하는 부분입니당. 나중으로 미뤄두세요~~!
+
+5. <body - footer  부분>
+- 복붙 (직접 수정해도 됨 : (l.539)DASHIO -> HOT6)
+  (인덱스 l.535~555)
+
+6. </section>~</body>부분
+- 경로 추가 : static/ 
+
+
+
+
+[나중에 할 일]
+3. 로고 수정
+- 촌스럽지 않고 눈에 잘 보이게.
+ 
+4. 프로젝트 개요
+
+5. 프로필 슬랙 연동
+
+
+
+
+
+0.  #81D8DO
+
+1. #008081
+
+2.  #003152
+
+3.  #89CFFO
+
+4.  #0080FF
+
+5.  #111E6C
+
+항목 세부내용 #ccccde  
+
+
+
+
+
+[Project Overview]
+
+1. CCTV 탄생 목적 : 불확실성 제거
+2. 배경 : 전쟁 상황
+3. 사고 발생은 한 순간 & 짧은 시간 동안.
+(통계자료)
+4. AI : 사람의 지속적인 감시 시간을 줄여줌
+5. Deep learning : 정확도 향상
+
+
+
